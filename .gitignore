@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/
+node_modules/
+frontend/dist/
+test-results/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.coverage
+*.egg-info/
+
+.playwright-mcp/

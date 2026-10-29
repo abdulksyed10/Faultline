@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faultline-lab"
+version = "0.1.0"
+description = "Reproducible incident diagnosis and repair experiments with a NumPy neural forecaster"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<0.136", "starlette<1", "uvicorn>=0.30,<1", "numpy>=1.24,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1"]
+
+[project.scripts]
+faultline = "faultline.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["backend"]
+filterwarnings = ["error", "ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning"]
+

@@ -1,0 +1,45 @@
+name: verify
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: "requirements*.lock"
+      - run: pip install -r requirements-dev.lock
+      - run: pip install --no-deps -e .
+      - run: python -m pytest -q
+      - run: python scripts/benchmark.py --epochs 30 --count 24 --output data/benchmark-ci.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: held-out-evaluation
+          path: data/benchmark-ci.json
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm test -- --run
+      - run: npm run build
+  container:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -t faultline:ci .

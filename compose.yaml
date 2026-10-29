@@ -1,0 +1,11 @@
+services:
+  faultline:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - faultline-data:/data
+    restart: unless-stopped
+    stop_grace_period: 30s
+volumes:
+  faultline-data:

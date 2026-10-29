@@ -1,0 +1,738 @@
+{
+  "seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223
+  ],
+  "case_count": 24,
+  "metrics": {
+    "neural": {
+      "detection_recall": 1.0,
+      "top1_accuracy": 1.0,
+      "false_positive_rate": 0.005539371468926553,
+      "mean_detection_delay": 2.0,
+      "latency_mae_ms": 0.5110313653335153,
+      "detected_count": 24,
+      "localized_count": 24,
+      "healthy_points": 45312,
+      "false_positive_points": 251
+    },
+    "ewma": {
+      "detection_recall": 1.0,
+      "top1_accuracy": 1.0,
+      "false_positive_rate": 0.005429025423728814,
+      "mean_detection_delay": 2.0,
+      "latency_mae_ms": 0.5568189598516201,
+      "detected_count": 24,
+      "localized_count": 24,
+      "healthy_points": 45312,
+      "false_positive_points": 246
+    }
+  },
+  "cases": [
+    {
+      "seed": 200,
+      "service": "gateway",
+      "kind": "latency",
+      "neural": {
+        "root": "gateway",
+        "detected": true
+      },
+      "ewma": {
+        "root": "gateway",
+        "detected": true
+      }
+    },
+    {
+      "seed": 201,
+      "service": "checkout",
+      "kind": "saturation",
+      "neural": {
+        "root": "checkout",
+        "detected": true
+      },
+      "ewma": {
+        "root": "checkout",
+        "detected": true
+      }
+    },
+    {
+      "seed": 202,
+      "service": "catalog",
+      "kind": "errors",
+      "neural": {
+        "root": "catalog",
+        "detected": true
+      },
+      "ewma": {
+        "root": "catalog",
+        "detected": true
+      }
+    },
+    {
+      "seed": 203,
+      "service": "payments",
+      "kind": "latency",
+      "neural": {
+        "root": "payments",
+        "detected": true
+      },
+      "ewma": {
+        "root": "payments",
+        "detected": true
+      }
+    },
+    {
+      "seed": 204,
+      "service": "inventory",
+      "kind": "saturation",
+      "neural": {
+        "root": "inventory",
+        "detected": true
+      },
+      "ewma": {
+        "root": "inventory",
+        "detected": true
+      }
+    },
+    {
+      "seed": 205,
+      "service": "orders",
+      "kind": "errors",
+      "neural": {
+        "root": "orders",
+        "detected": true
+      },
+      "ewma": {
+        "root": "orders",
+        "detected": true
+      }
+    },
+    {
+      "seed": 206,
+      "service": "cache",
+      "kind": "latency",
+      "neural": {
+        "root": "cache",
+        "detected": true
+      },
+      "ewma": {
+        "root": "cache",
+        "detected": true
+      }
+    },
+    {
+      "seed": 207,
+      "service": "database",
+      "kind": "saturation",
+      "neural": {
+        "root": "database",
+        "detected": true
+      },
+      "ewma": {
+        "root": "database",
+        "detected": true
+      }
+    },
+    {
+      "seed": 208,
+      "service": "gateway",
+      "kind": "errors",
+      "neural": {
+        "root": "gateway",
+        "detected": true
+      },
+      "ewma": {
+        "root": "gateway",
+        "detected": true
+      }
+    },
+    {
+      "seed": 209,
+      "service": "checkout",
+      "kind": "latency",
+      "neural": {
+        "root": "checkout",
+        "detected": true
+      },
+      "ewma": {
+        "root": "checkout",
+        "detected": true
+      }
+    },
+    {
+      "seed": 210,
+      "service": "catalog",
+      "kind": "saturation",
+      "neural": {
+        "root": "catalog",
+        "detected": true
+      },
+      "ewma": {
+        "root": "catalog",
+        "detected": true
+      }
+    },
+    {
+      "seed": 211,
+      "service": "payments",
+      "kind": "errors",
+      "neural": {
+        "root": "payments",
+        "detected": true
+      },
+      "ewma": {
+        "root": "payments",
+        "detected": true
+      }
+    },
+    {
+      "seed": 212,
+      "service": "inventory",
+      "kind": "latency",
+      "neural": {
+        "root": "inventory",
+        "detected": true
+      },
+      "ewma": {
+        "root": "inventory",
+        "detected": true
+      }
+    },
+    {
+      "seed": 213,
+      "service": "orders",
+      "kind": "saturation",
+      "neural": {
+        "root": "orders",
+        "detected": true
+      },
+      "ewma": {
+        "root": "orders",
+        "detected": true
+      }
+    },
+    {
+      "seed": 214,
+      "service": "cache",
+      "kind": "errors",
+      "neural": {
+        "root": "cache",
+        "detected": true
+      },
+      "ewma": {
+        "root": "cache",
+        "detected": true
+      }
+    },
+    {
+      "seed": 215,
+      "service": "database",
+      "kind": "latency",
+      "neural": {
+        "root": "database",
+        "detected": true
+      },
+      "ewma": {
+        "root": "database",
+        "detected": true
+      }
+    },
+    {
+      "seed": 216,
+      "service": "gateway",
+      "kind": "saturation",
+      "neural": {
+        "root": "gateway",
+        "detected": true
+      },
+      "ewma": {
+        "root": "gateway",
+        "detected": true
+      }
+    },
+    {
+      "seed": 217,
+      "service": "checkout",
+      "kind": "errors",
+      "neural": {
+        "root": "checkout",
+        "detected": true
+      },
+      "ewma": {
+        "root": "checkout",
+        "detected": true
+      }
+    },
+    {
+      "seed": 218,
+      "service": "catalog",
+      "kind": "latency",
+      "neural": {
+        "root": "catalog",
+        "detected": true
+      },
+      "ewma": {
+        "root": "catalog",
+        "detected": true
+      }
+    },
+    {
+      "seed": 219,
+      "service": "payments",
+      "kind": "saturation",
+      "neural": {
+        "root": "payments",
+        "detected": true
+      },
+      "ewma": {
+        "root": "payments",
+        "detected": true
+      }
+    },
+    {
+      "seed": 220,
+      "service": "inventory",
+      "kind": "errors",
+      "neural": {
+        "root": "inventory",
+        "detected": true
+      },
+      "ewma": {
+        "root": "inventory",
+        "detected": true
+      }
+    },
+    {
+      "seed": 221,
+      "service": "orders",
+      "kind": "latency",
+      "neural": {
+        "root": "orders",
+        "detected": true
+      },
+      "ewma": {
+        "root": "orders",
+        "detected": true
+      }
+    },
+    {
+      "seed": 222,
+      "service": "cache",
+      "kind": "saturation",
+      "neural": {
+        "root": "cache",
+        "detected": true
+      },
+      "ewma": {
+        "root": "cache",
+        "detected": true
+      }
+    },
+    {
+      "seed": 223,
+      "service": "database",
+      "kind": "errors",
+      "neural": {
+        "root": "database",
+        "detected": true
+      },
+      "ewma": {
+        "root": "database",
+        "detected": true
+      }
+    }
+  ],
+  "metric_definition": "event-recall-v2: any 3 consecutive origin-score exceedances wholly inside the injected fault window; decision delay includes the third point",
+  "limits": "Held-out synthetic seeds on the same fixed graph/generator. Point-level false alarms; event recall; no real-system generalization claim.",
+  "provenance": {
+    "model": {
+      "name": "Graph residual forecaster",
+      "version": "grf-1",
+      "seed": 7,
+      "epochs": 60,
+      "architecture": [
+        23,
+        32,
+        3
+      ],
+      "parameter_count": 867,
+      "train_seeds": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "validation_seeds": [
+        40,
+        41
+      ],
+      "calibration_seeds": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "training_samples": 15104,
+      "calibration_samples": 7552,
+      "data_fingerprint": "78f3e05cb96bf000473f1c54208bef9c2602aa4fef474483183554b5a4cafa5a",
+      "curve": [
+        {
+          "epoch": 1,
+          "loss": 0.0579403186957029,
+          "validation_loss": 0.05053997026728381
+        },
+        {
+          "epoch": 2,
+          "loss": 0.03860461141885395,
+          "validation_loss": 0.03037524037580136
+        },
+        {
+          "epoch": 3,
+          "loss": 0.03169969315367351,
+          "validation_loss": 0.025918905570296757
+        },
+        {
+          "epoch": 4,
+          "loss": 0.02782389090639896,
+          "validation_loss": 0.0229950056817385
+        },
+        {
+          "epoch": 5,
+          "loss": 0.025243928148831536,
+          "validation_loss": 0.021600035172439358
+        },
+        {
+          "epoch": 6,
+          "loss": 0.023535338986530714,
+          "validation_loss": 0.02081787178639484
+        },
+        {
+          "epoch": 7,
+          "loss": 0.02225626015863759,
+          "validation_loss": 0.01951833330530024
+        },
+        {
+          "epoch": 8,
+          "loss": 0.02121846935761387,
+          "validation_loss": 0.018890556718813074
+        },
+        {
+          "epoch": 9,
+          "loss": 0.020512348612904928,
+          "validation_loss": 0.018581945286808392
+        },
+        {
+          "epoch": 10,
+          "loss": 0.019781288937007615,
+          "validation_loss": 0.01752937366147576
+        },
+        {
+          "epoch": 11,
+          "loss": 0.019190351293688,
+          "validation_loss": 0.01731571588204418
+        },
+        {
+          "epoch": 12,
+          "loss": 0.018680672989837374,
+          "validation_loss": 0.016868712616143186
+        },
+        {
+          "epoch": 13,
+          "loss": 0.01835836852814735,
+          "validation_loss": 0.016498733994743334
+        },
+        {
+          "epoch": 14,
+          "loss": 0.017937237578771793,
+          "validation_loss": 0.01640940014735458
+        },
+        {
+          "epoch": 15,
+          "loss": 0.01754194396784513,
+          "validation_loss": 0.015917522290564045
+        },
+        {
+          "epoch": 16,
+          "loss": 0.017310556290596368,
+          "validation_loss": 0.01578883064873805
+        },
+        {
+          "epoch": 17,
+          "loss": 0.017159139243269828,
+          "validation_loss": 0.015674680067416197
+        },
+        {
+          "epoch": 18,
+          "loss": 0.016754227422071215,
+          "validation_loss": 0.015272008977549104
+        },
+        {
+          "epoch": 19,
+          "loss": 0.01666040027448862,
+          "validation_loss": 0.015212556925666882
+        },
+        {
+          "epoch": 20,
+          "loss": 0.016462103496215203,
+          "validation_loss": 0.01511028985163948
+        },
+        {
+          "epoch": 21,
+          "loss": 0.016276611637121123,
+          "validation_loss": 0.015041089230198082
+        },
+        {
+          "epoch": 22,
+          "loss": 0.016022076308590892,
+          "validation_loss": 0.014816396814716805
+        },
+        {
+          "epoch": 23,
+          "loss": 0.015908199737281047,
+          "validation_loss": 0.014795246409641642
+        },
+        {
+          "epoch": 24,
+          "loss": 0.015875351880191933,
+          "validation_loss": 0.014828484135373262
+        },
+        {
+          "epoch": 25,
+          "loss": 0.01572255324817708,
+          "validation_loss": 0.014823155115890472
+        },
+        {
+          "epoch": 26,
+          "loss": 0.015637378041730876,
+          "validation_loss": 0.014551256062727114
+        },
+        {
+          "epoch": 27,
+          "loss": 0.015472974287431001,
+          "validation_loss": 0.014494881371861938
+        },
+        {
+          "epoch": 28,
+          "loss": 0.01552174031064558,
+          "validation_loss": 0.014387693104380934
+        },
+        {
+          "epoch": 29,
+          "loss": 0.015474294625864476,
+          "validation_loss": 0.014614509835046974
+        },
+        {
+          "epoch": 30,
+          "loss": 0.015211905032328972,
+          "validation_loss": 0.014253516246392513
+        },
+        {
+          "epoch": 31,
+          "loss": 0.015182670544597213,
+          "validation_loss": 0.01441795055725063
+        },
+        {
+          "epoch": 32,
+          "loss": 0.015014950338911542,
+          "validation_loss": 0.014191208044900542
+        },
+        {
+          "epoch": 33,
+          "loss": 0.015137413246341535,
+          "validation_loss": 0.014194973626780016
+        },
+        {
+          "epoch": 34,
+          "loss": 0.015005516349879537,
+          "validation_loss": 0.014171135532736311
+        },
+        {
+          "epoch": 35,
+          "loss": 0.014936994572272504,
+          "validation_loss": 0.01408838976047683
+        },
+        {
+          "epoch": 36,
+          "loss": 0.014968373710051303,
+          "validation_loss": 0.01430643526266589
+        },
+        {
+          "epoch": 37,
+          "loss": 0.014871615389501937,
+          "validation_loss": 0.014222433989587738
+        },
+        {
+          "epoch": 38,
+          "loss": 0.01470462547985397,
+          "validation_loss": 0.01396510277300766
+        },
+        {
+          "epoch": 39,
+          "loss": 0.01464954734937219,
+          "validation_loss": 0.013998419714737144
+        },
+        {
+          "epoch": 40,
+          "loss": 0.014587375647553837,
+          "validation_loss": 0.014063074890673035
+        },
+        {
+          "epoch": 41,
+          "loss": 0.014762605352493248,
+          "validation_loss": 0.014203261640192748
+        },
+        {
+          "epoch": 42,
+          "loss": 0.014609354706889963,
+          "validation_loss": 0.0139716867981285
+        },
+        {
+          "epoch": 43,
+          "loss": 0.014612758530768948,
+          "validation_loss": 0.013965474706446105
+        },
+        {
+          "epoch": 44,
+          "loss": 0.014635376057531384,
+          "validation_loss": 0.014011342405876216
+        },
+        {
+          "epoch": 45,
+          "loss": 0.014428733324900956,
+          "validation_loss": 0.013821825060592168
+        },
+        {
+          "epoch": 46,
+          "loss": 0.014481802587136066,
+          "validation_loss": 0.013935649101248298
+        },
+        {
+          "epoch": 47,
+          "loss": 0.014477182447240795,
+          "validation_loss": 0.01386744571151176
+        },
+        {
+          "epoch": 48,
+          "loss": 0.014335303460644705,
+          "validation_loss": 0.013776228187132126
+        },
+        {
+          "epoch": 49,
+          "loss": 0.014390827745963059,
+          "validation_loss": 0.01385391718768126
+        },
+        {
+          "epoch": 50,
+          "loss": 0.014330378507391014,
+          "validation_loss": 0.013719892676528251
+        },
+        {
+          "epoch": 51,
+          "loss": 0.014262320429153614,
+          "validation_loss": 0.013807835621193431
+        },
+        {
+          "epoch": 52,
+          "loss": 0.014486839132174306,
+          "validation_loss": 0.013908386417129126
+        },
+        {
+          "epoch": 53,
+          "loss": 0.014175292640967526,
+          "validation_loss": 0.01365717168699559
+        },
+        {
+          "epoch": 54,
+          "loss": 0.014231186256004367,
+          "validation_loss": 0.01368417312227736
+        },
+        {
+          "epoch": 55,
+          "loss": 0.014276770682413025,
+          "validation_loss": 0.013699853357078611
+        },
+        {
+          "epoch": 56,
+          "loss": 0.01418254633116552,
+          "validation_loss": 0.013688336325606048
+        },
+        {
+          "epoch": 57,
+          "loss": 0.014185659347719318,
+          "validation_loss": 0.01368954077291599
+        },
+        {
+          "epoch": 58,
+          "loss": 0.0141032534153929,
+          "validation_loss": 0.013769949765313703
+        },
+        {
+          "epoch": 59,
+          "loss": 0.013983681438087352,
+          "validation_loss": 0.013538615901710589
+        },
+        {
+          "epoch": 60,
+          "loss": 0.013928007653937704,
+          "validation_loss": 0.013489185952629016
+        }
+      ],
+      "created_at": "2026-10-29T14:49:45.102234+00:00",
+      "calibration": "Per-service 99.5th percentile of maximum positive standardized residual; 3 consecutive exceedances",
+      "limits": "Synthetic data, known graph, fixed propagation. Tail evidence is not a causal probability or guaranteed coverage.",
+      "workload_support": {
+        "request_min": [
+          156.7059013413517,
+          95.98191065645258,
+          126.01372634497442,
+          77.97246419435243,
+          100.30894520406581,
+          60.30199790526214,
+          109.79188748373802,
+          133.7438618270846
+        ],
+        "request_max": [
+          790.5186925301948,
+          492.9652281879887,
+          632.7288627891888,
+          400.0223994334267,
+          513.9662794106565,
+          317.2513180411969,
+          553.1884060355225,
+          671.5698238987167
+        ],
+        "tolerance": 0.02,
+        "max_outside_fraction": 0.01
+      }
+    },
+    "python": "3.11.0",
+    "platform": "Windows",
+    "elapsed_seconds": 2.255
+  }
+}
